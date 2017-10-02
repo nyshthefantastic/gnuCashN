@@ -15,5 +15,4 @@
       <Button layoutX="60.0" layoutY="321.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" text="budget" />
       <Button layoutX="840.0" layoutY="106.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" text="employee" />
    </children>
-  
 </AnchorPane>

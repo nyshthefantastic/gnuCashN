@@ -7,8 +7,6 @@ package sourcecode;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
 /**
@@ -16,20 +14,14 @@ import javafx.fxml.Initializable;
  *
  * @author U Computers
  */
-public class DashboardController implements Initializable {
+public class CustomerHomeController implements Initializable {
 
     /**
      * Initializes the controller class.
-     * @param url
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    @FXML
-    private void customerClick(ActionEvent event)
-    {
     
-    }
-   
 }
