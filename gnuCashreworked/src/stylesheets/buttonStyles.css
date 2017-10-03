@@ -39,13 +39,42 @@ and open the template in the editor.
 
 
 }
+#addCusButton{
+    -fx-background-image: url(images/dashboard/plusCustomer.png);
+
+
+}
+#searchCusButton{
+    -fx-background-image: url(images/dashboard/searchCustomer.png);
+
+
+}
 #venButton{
     -fx-background-image: url(images/dashboard/Vendor.png);
-    -fx-background-size: cover;
+   
+
+}
+#addVenButton{
+    -fx-background-image: url(images/dashboard/plusVendor.png);
+   
+}
+#searchVenButton{
+    -fx-background-image: url(images/dashboard/searchVendor.png);
+  
 
 }
 #empButton{
     -fx-background-image: url(images/dashboard/Employee.png);
+
+
+}
+#addEmpButton{
+    -fx-background-image: url(images/dashboard/plusEmployee.png);
+
+
+}
+#searchEmpButton{
+    -fx-background-image: url(images/dashboard/searchEmployee.png);
 
 
 }
