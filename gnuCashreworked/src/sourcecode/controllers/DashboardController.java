@@ -38,4 +38,60 @@ private AnchorPane dashGUI;
         AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/customerHome.fxml"));
         dashGUI.getChildren().setAll(pane);
     }
+    @FXML
+    private void vendorClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/vendorHome.fxml"));
+        dashGUI.getChildren().setAll(pane);
+    }
+    @FXML
+    private void employeeClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/employeeHome.fxml"));
+        dashGUI.getChildren().setAll(pane);
+    }
+    @FXML
+        private void budgetClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/budgetHome.fxml"));
+        dashGUI.getChildren().setAll(pane);
+    }
+    @FXML
+    private void accountsClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/accountsHome.fxml"));
+        dashGUI.getChildren().setAll(pane);
+    }
+    @FXML
+    private void reportsClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/reportsHome.fxml"));
+        dashGUI.getChildren().setAll(pane);
+    }
+    @FXML
+        private void commandsClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/commandsHome.fxml"));
+        dashGUI.getChildren().setAll(pane);
+    }
+    @FXML
+    private void windowsClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/windowsHome.fxml"));
+        dashGUI.getChildren().setAll(pane);
+    }
+    @FXML
+    private void helpClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/helpHome.fxml"));
+        dashGUI.getChildren().setAll(pane);
+    }
 }
