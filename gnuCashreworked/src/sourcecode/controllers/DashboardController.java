@@ -22,6 +22,7 @@ import javafx.scene.layout.AnchorPane;
 public class DashboardController implements Initializable {
 @FXML
 private AnchorPane dashGUI;
+
     /**
      * Initializes the controller class.
      * @param url

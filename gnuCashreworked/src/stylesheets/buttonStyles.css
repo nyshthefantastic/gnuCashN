@@ -8,57 +8,70 @@ and open the template in the editor.
     Author     : U Computers
 */
 .buttonGen{
-    
-      -fx-background-size: cover;
-          -fx-background-color:#ffffff;
-          -fx-border-width:3px;
+
+    -fx-background-size: cover;
+    -fx-background-color:#ffffff;
+    -fx-border-width:3px;
 }
 .buttonGen:hover{
-    
-      -fx-background-size: cover;
-          -fx-background-color:#ffffff;
-          -fx-border-color:#00BCD4;
+
+    -fx-background-size: cover;
+    -fx-background-color:#ffffff;
+    -fx-border-color:#00BCD4;
 
 }
+#backButton{
+    -fx-background-color:#ffffff;
+    -fx-background-radius: 50%;
+    -fx-padding: 0px;
+        -fx-background-image: url(images/dashboard/back.png);
+      -fx-background-size: cover;
 
+}
+#backButton:hover{
+    
+ 
+      
+
+}
 #cusButton{
     -fx-background-image: url(images/dashboard/Customer.png);
-  
-    
+
+
 }
 #venButton{
     -fx-background-image: url(images/dashboard/Vendor.png);
-     -fx-background-size: cover;
-    
+    -fx-background-size: cover;
+
 }
 #empButton{
     -fx-background-image: url(images/dashboard/Employee.png);
-   
-    
+
+
 }
 #budButton{
     -fx-background-image: url(images/dashboard/Budget.png);
 
-    
+
 }
 #accButton{
     -fx-background-image: url(images/dashboard/Accounts.png);
-   
-    
+
+
 }
 #repButton{
     -fx-background-image: url(images/dashboard/Reports.png);
-    
+
 }
 #comButton{
     -fx-background-image: url(images/dashboard/Commands.png);
-    
+
 }
 #winButton{
     -fx-background-image: url(images/dashboard/Windows.png);
-    
+
 }
 #helpButton{
     -fx-background-image: url(images/dashboard/Help.png);
-    
+
 }
