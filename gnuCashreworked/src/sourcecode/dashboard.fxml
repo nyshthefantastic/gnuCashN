@@ -3,17 +3,17 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" maxHeight="768.0" maxWidth="1200.0" minHeight="768.0" minWidth="1200.0" prefHeight="768.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sourcecode.DashboardController">
+<AnchorPane id="dashGUI" fx:id="dashGUI" maxHeight="768.0" maxWidth="1200.0" minHeight="768.0" minWidth="1200.0" prefHeight="768.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sourcecode.controllers.DashboardController">
    <children>
-      <Button id="cusButton" fx:id="cusButton" layoutX="60.0" layoutY="106.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" onAction="#customerClick" prefHeight="150.0" prefWidth="300.0" stylesheets="@../stylesheets/buttonStyles.css" text="Customer" />
-      <Button layoutX="450.0" layoutY="106.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" text="vendor" />
-      <Button layoutX="840.0" layoutY="536.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" text="help" />
-      <Button layoutX="450.0" layoutY="536.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" text="windows" />
-      <Button layoutX="60.0" layoutY="536.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" text="commands" />
-      <Button layoutX="840.0" layoutY="321.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" text="reports" />
-      <Button layoutX="450.0" layoutY="321.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" text="accounts" />
-      <Button layoutX="60.0" layoutY="321.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" text="budget" />
-      <Button layoutX="840.0" layoutY="106.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" text="employee" />
+      <Button id="cusButton" fx:id="cusButton" layoutX="60.0" layoutY="106.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" onAction="#customerClick" prefHeight="150.0" prefWidth="300.0" stylesheets="@../stylesheets/buttonStyles.css" />
+      <Button id="venButton" fx:id="venButton" layoutX="450.0" layoutY="106.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" stylesheets="@../stylesheets/buttonStyles.css" />
+      <Button id="helpButton" fx:id="helpButton" layoutX="840.0" layoutY="536.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" stylesheets="@../stylesheets/buttonStyles.css" />
+      <Button id="winButton" fx:id="winButton" layoutX="450.0" layoutY="536.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" stylesheets="@../stylesheets/buttonStyles.css" />
+      <Button id="comButton" fx:id="comButton" layoutX="60.0" layoutY="536.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" stylesheets="@../stylesheets/buttonStyles.css" />
+      <Button id="repButton" fx:id="repButton" layoutX="840.0" layoutY="321.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" stylesheets="@../stylesheets/buttonStyles.css" />
+      <Button id="accButton" fx:id="accButton" layoutX="450.0" layoutY="321.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" stylesheets="@../stylesheets/buttonStyles.css" />
+      <Button id="budButton" fx:id="budButton" layoutX="60.0" layoutY="321.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" stylesheets="@../stylesheets/buttonStyles.css" />
+      <Button id="empButton" fx:id="empButton" layoutX="840.0" layoutY="106.0" maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="300.0" stylesheets="@../stylesheets/buttonStyles.css" />
    </children>
   
 </AnchorPane>

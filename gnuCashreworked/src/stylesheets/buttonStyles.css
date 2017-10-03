@@ -9,7 +9,47 @@ and open the template in the editor.
 */
 
 #cusButton{
-    background: url(@../resources.images.dashboard/Customer.png);
+    -fx-background-image: url(images/dashboard/Customer.png);
+    -fx-background-size: cover;
     
+}
+#venButton{
+    -fx-background-image: url(images/dashboard/Vendor.png);
+     -fx-background-size: cover;
+    
+}
+#empButton{
+    -fx-background-image: url(images/dashboard/Employee.png);
+     -fx-background-size: cover;
+    
+}
+#budButton{
+    -fx-background-image: url(images/dashboard/Budget.png);
+     -fx-background-size: cover;
+    
+}
+#accButton{
+    -fx-background-image: url(images/dashboard/Budget.png);
+     -fx-background-size: cover;
+    
+}
+#repButton{
+    -fx-background-image: url(images/dashboard/Reports.png);
+     -fx-background-size: cover;
+    
+}
+#comButton{
+    -fx-background-image: url(images/dashboard/Commands.png);
+     -fx-background-size: cover;
+    
+}
+#winButton{
+    -fx-background-image: url(images/dashboard/Windows.png);
+     -fx-background-size: cover;
+    
+}
+#helpButton{
+    -fx-background-image: url(images/dashboard/Help.png);
+     -fx-background-size: cover;
     
 }
