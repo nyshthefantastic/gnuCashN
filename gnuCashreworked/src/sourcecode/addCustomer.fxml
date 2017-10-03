@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sourcecode.controllers.AddCustomerController">
-    
+<AnchorPane id="cusGUI" fx:id="cusGUI" prefHeight="768.0" prefWidth="1280.0" styleClass="anchorpanes" stylesheets="@../stylesheets/generalStyles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sourcecode.controllers.CustomerHomeController">
+   <children>
+      <Label id="sidebar" fx:id="sidebar" prefHeight="768.0" prefWidth="235.0" stylesheets="@../stylesheets/generalStyles.css" />
+      <Button id="backButton" fx:id="backButton" contentDisplay="GRAPHIC_ONLY" layoutX="91.0" layoutY="139.0" maxHeight="48.8" maxWidth="50.0" minHeight="48.8" minWidth="50.0" mnemonicParsing="false" onAction="#backClick" prefHeight="48.8" prefWidth="50.0" stylesheets="@../stylesheets/buttonStyles.css">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Label layoutX="37.0" layoutY="44.0" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
