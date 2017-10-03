@@ -7,10 +7,23 @@ and open the template in the editor.
     Created on : Oct 3, 2017, 12:13:34 AM
     Author     : U Computers
 */
+.buttonGen{
+    
+      -fx-background-size: cover;
+          -fx-background-color:#ffffff;
+          -fx-border-width:3px;
+}
+.buttonGen:hover{
+    
+      -fx-background-size: cover;
+          -fx-background-color:#ffffff;
+          -fx-border-color:#00BCD4;
+
+}
 
 #cusButton{
     -fx-background-image: url(images/dashboard/Customer.png);
-    -fx-background-size: cover;
+  
     
 }
 #venButton{
@@ -20,36 +33,32 @@ and open the template in the editor.
 }
 #empButton{
     -fx-background-image: url(images/dashboard/Employee.png);
-     -fx-background-size: cover;
+   
     
 }
 #budButton{
     -fx-background-image: url(images/dashboard/Budget.png);
-     -fx-background-size: cover;
+
     
 }
 #accButton{
     -fx-background-image: url(images/dashboard/Accounts.png);
-     -fx-background-size: cover;
+   
     
 }
 #repButton{
     -fx-background-image: url(images/dashboard/Reports.png);
-     -fx-background-size: cover;
     
 }
 #comButton{
     -fx-background-image: url(images/dashboard/Commands.png);
-     -fx-background-size: cover;
     
 }
 #winButton{
     -fx-background-image: url(images/dashboard/Windows.png);
-     -fx-background-size: cover;
     
 }
 #helpButton{
     -fx-background-image: url(images/dashboard/Help.png);
-     -fx-background-size: cover;
     
 }
