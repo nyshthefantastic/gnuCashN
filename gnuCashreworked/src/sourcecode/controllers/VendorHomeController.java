@@ -33,6 +33,20 @@ private AnchorPane vendorGUI;
         AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/dashboard.fxml"));
         vendorGUI.getChildren().setAll(pane);
     }
+             @FXML
+    private void addVendorClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/addVendor.fxml"));
+        vendorGUI.getChildren().setAll(pane);
+    }
+        @FXML
+    private void findVendorClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/findVendor.fxml"));
+        vendorGUI.getChildren().setAll(pane);
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
