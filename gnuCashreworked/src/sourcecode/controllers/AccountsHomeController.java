@@ -32,6 +32,13 @@ private AnchorPane accGUI;
         AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/dashboard.fxml"));
         accGUI.getChildren().setAll(pane);
     }
+         @FXML
+    private void loanRepayClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/loanRepaymentCalculator.fxml"));
+        accGUI.getChildren().setAll(pane);
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
