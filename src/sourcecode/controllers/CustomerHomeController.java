@@ -48,7 +48,18 @@ public class CustomerHomeController implements Initializable {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/sourcecode/findCustomer.fxml"));
         cusGUI.getChildren().setAll(pane);
     }
+     @FXML
+    private void newInvoiceClick(ActionEvent event) throws IOException {
 
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/sourcecode/addInvoice.fxml"));
+        cusGUI.getChildren().setAll(pane);
+    }
+     @FXML
+    private void findInvoiceClick(ActionEvent event) throws IOException {
+
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/sourcecode/findInvoice.fxml"));
+        cusGUI.getChildren().setAll(pane);
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
