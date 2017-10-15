@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="cusGUI" fx:id="cusGUI" prefHeight="768.0" prefWidth="1280.0" styleClass="anchorpanes" stylesheets="@../stylesheets/generalStyles.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sourcecode.controllers.FindInvoiceController">
+   <children>
+      <Label id="sidebar" fx:id="sidebar" prefHeight="768.0" prefWidth="235.0" stylesheets="@../stylesheets/generalStyles.css" />
+      <Button id="backButton" fx:id="backButton" contentDisplay="GRAPHIC_ONLY" layoutX="91.0" layoutY="139.0" maxHeight="48.8" maxWidth="50.0" minHeight="48.8" minWidth="50.0" mnemonicParsing="false" prefHeight="48.8" prefWidth="50.0" stylesheets="@../stylesheets/buttonStyles.css">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Label layoutX="37.0" layoutY="44.0" text="Find Invoice" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="60.0" text="Search Criteria">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="461.0" text="Search when">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="941.0" layoutY="130.0" prefHeight="35.0" prefWidth="212.0" promptText="INVOICE1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Button id="findCustomerBtn" fx:id="findCustomerBtn" layoutX="850.0" layoutY="640.0" mnemonicParsing="false" onAction="#submit" prefHeight="56.0" prefWidth="198.0" stylesheets="@../stylesheets/buttonStyles.css" text="SEARCH">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox id="customerIdCombo" fx:id="customerIdCombo" layoutX="300.0" layoutY="130.0" prefHeight="35.0" prefWidth="221.0" />
+      <ComboBox id="containsCombo" fx:id="containsCombo" layoutX="675.0" layoutY="130.0" prefHeight="35.0" prefWidth="181.0" />
+      <CheckBox layoutX="300.0" layoutY="200.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="136.0" text="  Match case">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="675.0" layoutY="200.0" mnemonicParsing="false" text="  Search only active data">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <ComboBox id="newSearchComboBox" fx:id="newSearchComboBox" layoutX="300.0" layoutY="340.0" prefHeight="35.0" prefWidth="257.0" />
+      <RadioButton id="radio1" fx:id="radio1" layoutX="300.0" layoutY="507.0" mnemonicParsing="false" text="all criteria are met">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton id="radio2" fx:id="radio2" layoutX="300.0" layoutY="547.0" mnemonicParsing="false" text="any criteria are met">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="310.0" layoutY="287.0" text="Choose an option">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView layoutX="666.0" layoutY="340.0" prefHeight="232.0" prefWidth="490.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

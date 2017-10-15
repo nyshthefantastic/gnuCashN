@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="cusGUI" fx:id="cusGUI" prefHeight="768.0" prefWidth="1280.0" styleClass="anchorpanes" stylesheets="@../stylesheets/generalStyles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sourcecode.controllers.LoanRepaymentCalculatorController">
+   <children>
+      <Label id="sidebar" fx:id="sidebar" prefHeight="768.0" prefWidth="235.0" stylesheets="@../stylesheets/generalStyles.css" />
+      <Button id="backButton" fx:id="backButton" contentDisplay="GRAPHIC_ONLY" layoutX="91.0" layoutY="139.0" maxHeight="48.8" maxWidth="50.0" minHeight="48.8" minWidth="50.0" mnemonicParsing="false" onAction="#backClick" prefHeight="48.8" prefWidth="50.0" stylesheets="@../stylesheets/buttonStyles.css">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Label layoutX="23.0" layoutY="51.0" text="Loan Repayment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="850.0" layoutY="480.0" text="Frequency" />
+      <Label layoutX="850.0" layoutY="340.0" text="When Paid" />
+      <Label layoutX="850.0" layoutY="200.0" text="Frequency" />
+      <Label layoutX="850.0" layoutY="60.0" text="Type" />
+      <Label layoutX="300.0" layoutY="60.0" text="Payment Periods" />
+      <Label layoutX="300.0" layoutY="200.0" text="Interest Rate" />
+      <Label layoutX="300.0" layoutY="340.0" text="Present Value" />
+      <Label layoutX="300.0" layoutY="480.0" text="Periodic Payment" />
+      <Label layoutX="300.0" layoutY="620.0" text="Future Value" />
+      <TextField layoutX="300.0" layoutY="130.0" promptText="24" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
+      <TextField layoutX="300.0" layoutY="550.0" promptText="400.00" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
+      <TextField layoutX="300.0" layoutY="410.0" promptText="15000.00" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
+      <TextField layoutX="300.0" layoutY="270.0" promptText="12" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
+      <TextField layoutX="300.0" layoutY="690.0" promptText="21000.00" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
+      <RadioButton layoutX="850.0" layoutY="130.0" mnemonicParsing="false" text="Discrete" />
+      <RadioButton layoutX="1010.0" layoutY="130.0" mnemonicParsing="false" text="Continous" />
+      <RadioButton layoutX="850.0" layoutY="410.0" mnemonicParsing="false" text="Beginning" />
+      <RadioButton layoutX="1010.0" layoutY="410.0" mnemonicParsing="false" text="End" />
+      <ComboBox id="freqCombo1" fx:id="freqCombo1" layoutX="850.0" layoutY="270.0" prefWidth="150.0" />
+      <ComboBox id="freqCombo2" fx:id="freqCombo2" layoutX="850.0" layoutY="550.0" prefWidth="150.0" />
+      <Button layoutX="850.0" layoutY="641.0" mnemonicParsing="false" onAction="#submit" prefHeight="76.0" prefWidth="282.0" styleClass="submitButton" stylesheets="@../stylesheets/generalStyles.css" text="SUBMIT" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
