@@ -22,68 +22,68 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="383.0" layoutY="84.0" text="Type">
+      <Label layoutX="300.0" layoutY="60.0" text="Type">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="384.0" layoutY="229.0" text="Date Opened">
+      <Label layoutX="300.0" layoutY="200.0" text="Date Opened">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="384.0" layoutY="381.0" text="Billing ID">
+      <Label layoutX="300.0" layoutY="340.0" text="Billing ID">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="383.0" layoutY="525.0" text="Notes">
+      <Label layoutX="300.0" layoutY="480.0" text="Notes">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="856.0" layoutY="84.0" text="Invoice ID">
+      <Label layoutX="850.0" layoutY="60.0" text="Invoice ID">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="856.0" layoutY="229.0" text="Customer ID">
+      <Label layoutX="850.0" layoutY="200.0" text="Customer ID">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="856.0" layoutY="368.0" text="Terms">
+      <Label layoutX="850.0" layoutY="340.0" text="Terms">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="377.0" layoutY="408.0" prefHeight="35.0" prefWidth="221.0" promptText="BILL1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField layoutX="300.0" layoutY="410.0" prefHeight="35.0" prefWidth="221.0" promptText="BILL1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="377.0" layoutY="552.0" prefHeight="35.0" prefWidth="221.0" promptText="John Doe" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField layoutX="300.0" layoutY="550.0" prefHeight="35.0" prefWidth="221.0" promptText="John Doe" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="856.0" layoutY="122.0" prefHeight="35.0" prefWidth="221.0" promptText="INVOICE1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField layoutX="850.0" layoutY="130.0" prefHeight="35.0" prefWidth="221.0" promptText="INVOICE1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="856.0" layoutY="262.0" prefHeight="35.0" prefWidth="221.0" promptText="CUST1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField layoutX="850.0" layoutY="270.0" prefHeight="35.0" prefWidth="221.0" promptText="CUST1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </TextField>
-      <Button id="addNewCustomerBtn" fx:id="addNewCustomerBtn" layoutX="858.0" layoutY="523.0" mnemonicParsing="false" onAction="#submit" prefHeight="59.0" prefWidth="208.0" stylesheets="@../stylesheets/buttonStyles.css" text="SUBMIT">
+      <Button id="addNewCustomerBtn" fx:id="addNewCustomerBtn" layoutX="850.0" layoutY="640.0" mnemonicParsing="false" onAction="#submit" prefHeight="59.0" prefWidth="208.0" stylesheets="@../stylesheets/buttonStyles.css" text="SUBMIT">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Button>
-      <DatePicker layoutX="377.0" layoutY="262.0" prefHeight="35.0" prefWidth="221.0" />
-      <ComboBox id="newInvTerms" fx:id="newInvTerms" layoutX="856.0" layoutY="408.0" prefHeight="35.0" prefWidth="221.0" />
-      <ComboBox id="newInvType" fx:id="newInvType" layoutX="377.0" layoutY="122.0" prefHeight="35.0" prefWidth="221.0" />
+      <DatePicker layoutX="300.0" layoutY="270.0" prefHeight="35.0" prefWidth="221.0" />
+      <ComboBox id="newInvTerms" fx:id="newInvTerms" layoutX="850.0" layoutY="410.0" prefHeight="35.0" prefWidth="221.0" />
+      <ComboBox id="newInvType" fx:id="newInvType" layoutX="300.0" layoutY="130.0" prefHeight="35.0" prefWidth="221.0" />
    </children>
 </AnchorPane>
