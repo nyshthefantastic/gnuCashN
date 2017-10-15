@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -13,7 +12,7 @@
 <AnchorPane id="empGUI" fx:id="empGUI" prefHeight="768.0" prefWidth="1280.0" styleClass="anchorpanes" stylesheets="@../stylesheets/generalStyles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sourcecode.controllers.NewExpenseVoucherController">
    <children>
       <Label id="sidebar" fx:id="sidebar" prefHeight="768.0" prefWidth="235.0" stylesheets="@../stylesheets/generalStyles.css" />
-      <Button id="backButton" fx:id="backButton" contentDisplay="GRAPHIC_ONLY" layoutX="91.0" layoutY="139.0" maxHeight="48.8" maxWidth="50.0" minHeight="48.8" minWidth="50.0" mnemonicParsing="false" onAction="#backClick" prefHeight="48.8" prefWidth="50.0" stylesheets="@../stylesheets/buttonStyles.css">
+      <Button id="backButton" fx:id="backButton" contentDisplay="GRAPHIC_ONLY" layoutX="91.0" layoutY="139.0" maxHeight="48.8" maxWidth="50.0" minHeight="48.8" minWidth="50.0" mnemonicParsing="false" onAction="#backClick" onTouchPressed="#backClick" prefHeight="48.8" prefWidth="50.0" stylesheets="@../stylesheets/buttonStyles.css">
          <effect>
             <InnerShadow />
          </effect>
@@ -63,7 +62,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button id="newExpVouchBtn" fx:id="newExpVouchBtn" layoutX="863.0" layoutY="640.0" mnemonicParsing="false" onAction="#submit" prefHeight="59.0" prefWidth="208.0" stylesheets="@../stylesheets/buttonStyles.css" text="SUBMIT">
+      <Button id="newExpVouchBtn" fx:id="newExpVouchBtn" layoutX="863.0" layoutY="640.0" mnemonicParsing="false" onAction="#submit" onTouchPressed="#submit" prefHeight="59.0" prefWidth="208.0" stylesheets="@../stylesheets/buttonStyles.css" text="SUBMIT">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
