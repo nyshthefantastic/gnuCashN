@@ -30,7 +30,7 @@ public class AddVendorController implements Initializable {
     private AnchorPane cusGUI;
       
           @FXML
-    private TextField cusName;
+    private TextField venName;
     @FXML
     private TextField comName;
     @FXML
@@ -50,7 +50,7 @@ public class AddVendorController implements Initializable {
           Alert alert = new Alert(Alert.AlertType.INFORMATION);
         validations val = new validations();
 
-        String cus = cusName.getText();
+        String ven = venName.getText();
         String com = comName.getText();
         String addT = addTxt.getText();
         String notesT = notesTxt.getText();
@@ -59,7 +59,7 @@ public class AddVendorController implements Initializable {
         String faxT = faxTxt.getText();
         valid = true;
 
-        if (val.testEmpty(cus) || val.testEmpty(com) || val.testEmpty(addT) || val.testEmpty(notesT) || val.testEmpty(phoneT) || val.testEmpty(emailT) || val.testEmpty(faxT)) {
+        if (val.testEmpty(ven) || val.testEmpty(com) || val.testEmpty(addT) || val.testEmpty(notesT) || val.testEmpty(phoneT) || val.testEmpty(emailT) || val.testEmpty(faxT)) {
             valid = false;
             alert.setTitle("FAILURE");
             alert.setHeaderText(null);
@@ -68,7 +68,7 @@ public class AddVendorController implements Initializable {
             alert.showAndWait();
 
         }
-        if ((!val.chkIfTxt(cus) || !val.chkIfTxt(com)) && valid == true) {
+        if ((!val.chkIfTxt(ven) || !val.chkIfTxt(com)) && valid == true) {
             valid = false;
 
             alert.setTitle("FAILURE");
@@ -94,7 +94,7 @@ public class AddVendorController implements Initializable {
             alert.setContentText("INPUT SUCCESSFUL !");
 
             alert.showAndWait();
-            cusName.setText("");
+            venName.setText("");
             comName.setText("");
             addTxt.setText("");
             notesTxt.setText("");

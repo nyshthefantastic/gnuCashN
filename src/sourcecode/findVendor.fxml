@@ -2,9 +2,11 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -23,48 +25,59 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="326.0" layoutY="76.0" text="Search Criteria">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="387.0" layoutY="471.0" text="Search when">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Label>
-      <TextField layoutX="951.0" layoutY="124.0" prefHeight="35.0" prefWidth="189.0" promptText="VENDR1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
-         <font>
-            <Font name="System Italic" size="14.0" />
-         </font>
-      </TextField>
-      <Button id="findCustomerBtn" fx:id="findCustomerBtn" layoutX="947.0" layoutY="501.0" mnemonicParsing="false" onAction="#submit" prefHeight="56.0" prefWidth="198.0" stylesheets="@../stylesheets/buttonStyles.css" text="SEARCH">
+      <Button id="findCustomerBtn" fx:id="findCustomerBtn" layoutX="850.0" layoutY="640.0" mnemonicParsing="false" onAction="#submit" prefHeight="56.0" prefWidth="198.0" stylesheets="@../stylesheets/buttonStyles.css" text="SEARCH">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Button>
-      <ChoiceBox id="customerIdCombo" fx:id="customerIdCombo" layoutX="387.0" layoutY="124.0" prefHeight="35.0" prefWidth="221.0" />
-      <ChoiceBox id="containsCombo" fx:id="containsCombo" layoutX="685.0" layoutY="124.0" prefHeight="35.0" prefWidth="181.0" />
-      <CheckBox layoutX="387.0" layoutY="235.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="136.0" text="Match case">
+      <Label layoutX="310.0" layoutY="70.0" text="Search Criteria">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="471.0" text="Search when">
          <font>
             <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="951.0" layoutY="140.0" prefHeight="35.0" prefWidth="212.0" promptText="VENDOR1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextField>
+      <ComboBox id="customerIdCombo" fx:id="customerIdCombo" layoutX="310.0" layoutY="140.0" prefHeight="35.0" prefWidth="221.0" />
+      <ComboBox id="containsCombo" fx:id="containsCombo" layoutX="685.0" layoutY="140.0" prefHeight="35.0" prefWidth="181.0" />
+      <CheckBox layoutX="310.0" layoutY="210.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="136.0" text="  Match case">
+         <font>
+            <Font size="16.0" />
          </font>
       </CheckBox>
-      <CheckBox layoutX="685.0" layoutY="235.0" mnemonicParsing="false" text="Search only active data">
+      <CheckBox layoutX="685.0" layoutY="210.0" mnemonicParsing="false" text="  Search only active data">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font size="16.0" />
          </font>
       </CheckBox>
-      <ChoiceBox id="newSearchComboBox" fx:id="newSearchComboBox" layoutX="387.0" layoutY="353.0" prefHeight="35.0" prefWidth="257.0" />
-      <RadioButton id="radio1" fx:id="radio1" layoutX="387.0" layoutY="498.0" mnemonicParsing="false" text="all criteria are met">
+      <ComboBox id="newSearchComboBox" fx:id="newSearchComboBox" layoutX="310.0" layoutY="350.0" prefHeight="35.0" prefWidth="257.0" />
+      <RadioButton id="radio1" fx:id="radio1" layoutX="310.0" layoutY="517.0" mnemonicParsing="false" text="all criteria are met">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton id="radio2" fx:id="radio2" layoutX="310.0" layoutY="557.0" mnemonicParsing="false" text="any criteria are met">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="320.0" layoutY="297.0" text="Choose an option">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
-      </RadioButton>
-      <RadioButton id="radio2" fx:id="radio2" layoutX="387.0" layoutY="538.0" mnemonicParsing="false" text="any criteria are met">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </RadioButton>
+      </Label>
+      <TableView layoutX="676.0" layoutY="350.0" prefHeight="232.0" prefWidth="490.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
    </children>
 </AnchorPane>

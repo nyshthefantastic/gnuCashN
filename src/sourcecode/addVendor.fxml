@@ -25,7 +25,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="350.0" layoutY="130.0" prefHeight="35.0" prefWidth="221.0" promptText="John Doe" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField id="venName" fx:id="venName" layoutX="350.0" layoutY="130.0" prefHeight="35.0" prefWidth="221.0" promptText="John Doe" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
