@@ -1,0 +1,211 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 3, 2017, 12:13:34 AM
+    Author     : U Computers
+*/
+.buttonGen{
+
+    -fx-background-size: cover;
+    -fx-background-color:#ffffff;
+    -fx-border-width:3px;
+}
+.buttonGen:hover{
+
+    -fx-background-size: cover;
+    -fx-background-color:#ffffff;
+    -fx-border-color:#00BCD4;
+
+}
+#backButton{
+    -fx-background-color:#ffffff;
+    -fx-background-radius: 50%;
+    -fx-padding: 0px;
+        -fx-background-image: url(images/dashboard/back.png);
+      -fx-background-size: cover;
+
+}
+#backButton:hover{
+    
+ 
+      
+
+}
+#cusButton{
+    -fx-background-image: url(images/dashboard/Customer.png);
+
+
+}
+#addCusButton{
+    -fx-background-image: url(images/dashboard/plusCustomer.png);
+
+
+}
+#searchCusButton{
+    -fx-background-image: url(images/dashboard/searchCustomer.png);
+
+
+}
+#venButton{
+    -fx-background-image: url(images/dashboard/Vendor.png);
+   
+
+}
+#addVenButton{
+    -fx-background-image: url(images/dashboard/plusVendor.png);
+   
+}
+#searchVenButton{
+    -fx-background-image: url(images/dashboard/searchVendor.png);
+  
+
+}
+#empButton{
+    -fx-background-image: url(images/dashboard/Employee.png);
+
+
+}
+#addEmpButton{
+    -fx-background-image: url(images/dashboard/plusEmployee.png);
+
+
+}
+#searchEmpButton{
+    -fx-background-image: url(images/dashboard/searchEmployee.png);
+
+
+}
+#budButton{
+    -fx-background-image: url(images/dashboard/Budget.png);
+
+
+}
+#accButton{
+    -fx-background-image: url(images/dashboard/Accounts.png);
+
+
+}
+#repButton{
+    -fx-background-image: url(images/dashboard/Reports.png);
+
+}
+#comButton{
+    -fx-background-image: url(images/dashboard/Commands.png);
+
+}
+#winButton{
+    -fx-background-image: url(images/dashboard/Windows.png);
+
+}
+#helpButton{
+    -fx-background-image: url(images/dashboard/Help.png);
+
+}
+
+/* CSS Styling for addNewCustomerBtn
+References - https://www.quackit.com/css/css_color_codes.cfm */
+#addNewCustomerBtn {
+    -fx-background-color: 
+        #2196F3,
+        linear-gradient(#2196F3, #2196F3),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #FEFEFE;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+#addNewCustomerBtn Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+#addNewCustomerBtn:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2FADC0 0%, #2BAFC3 100%),
+        #2FADC0,
+        #32CAE2,
+        radial-gradient(center 50% 50%, radius 100%, #26DBF7, #2FADC0);      
+}
+#addNewCustomerBtn:pressed {
+    -fx-padding: 15 20 18 20;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2FADC0 0%, #2BAFC3 100%),
+        #2FADC0,
+        #32CAE2,
+        radial-gradient(center 50% 50%, radius 100%, #26DBF7, #2FADC0); 
+}
+
+/* CSS Styling for findCustomerBtn
+References - https://www.quackit.com/css/css_color_codes.cfm */
+#findCustomerBtn {
+    -fx-background-color: 
+        #2196F3,
+        linear-gradient(#2196F3, #2196F3),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #FEFEFE;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+#findCustomerBtn Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+#findCustomerBtn:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2FADC0 0%, #2BAFC3 100%),
+        #2FADC0,
+        #32CAE2,
+        radial-gradient(center 50% 50%, radius 100%, #26DBF7, #2FADC0);      
+}
+#findCustomerBtn:pressed {
+    -fx-padding: 15 20 18 20;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2FADC0 0%, #2BAFC3 100%),
+        #2FADC0,
+        #32CAE2,
+        radial-gradient(center 50% 50%, radius 100%, #26DBF7, #2FADC0); 
+}
+
+/* CSS Styling for newExpVouchBtn
+References - https://www.quackit.com/css/css_color_codes.cfm */
+#newExpVouchBtn {
+    -fx-background-color: 
+        #2196F3,
+        linear-gradient(#2196F3, #2196F3),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #FEFEFE;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+#newExpVouchBtn Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+#newExpVouchBtn:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2FADC0 0%, #2BAFC3 100%),
+        #2FADC0,
+        #32CAE2,
+        radial-gradient(center 50% 50%, radius 100%, #26DBF7, #2FADC0);      
+}
+#newExpVouchBtn:pressed {
+    -fx-padding: 15 20 18 20;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2FADC0 0%, #2BAFC3 100%),
+        #2FADC0,
+        #32CAE2,
+        radial-gradient(center 50% 50%, radius 100%, #26DBF7, #2FADC0); 
+}
