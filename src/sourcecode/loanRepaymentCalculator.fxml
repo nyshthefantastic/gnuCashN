@@ -43,7 +43,7 @@
       <RadioButton layoutX="1010.0" layoutY="410.0" mnemonicParsing="false" text="End" />
       <ComboBox id="freqCombo1" fx:id="freqCombo1" layoutX="850.0" layoutY="270.0" prefWidth="150.0" />
       <ComboBox id="freqCombo2" fx:id="freqCombo2" layoutX="850.0" layoutY="550.0" prefWidth="150.0" />
-      <Button id="addNewCustomerBtn" fx:id="addNewCustomerBtn" layoutX="850.0" layoutY="641.0" mnemonicParsing="false" onAction="#submit" onTouchPressed="#submit" prefHeight="76.0" prefWidth="282.0" stylesheets="@../stylesheets/buttonStyles.css" text="SUBMIT" textFill="WHITE">
+      <Button id="addNewCustomerBtn" fx:id="addNewCustomerBtn" layoutX="850.0" layoutY="641.0" mnemonicParsing="false" onAction="#submit" onTouchPressed="#submit" prefHeight="59.0" prefWidth="208.0" stylesheets="@../stylesheets/buttonStyles.css" text="SUBMIT" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="32.0" />
          </font>
