@@ -18,7 +18,7 @@
             <InnerShadow />
          </effect>
       </Button>
-      <Label layoutX="37.0" layoutY="44.0" text="Add Customer" textFill="WHITE">
+      <Label layoutX="23.0" layoutY="51.0" text="Loan Repayment" textFill="WHITE">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
@@ -43,7 +43,7 @@
       <RadioButton layoutX="1010.0" layoutY="410.0" mnemonicParsing="false" text="End" />
       <ComboBox id="freqCombo1" fx:id="freqCombo1" layoutX="850.0" layoutY="270.0" prefWidth="150.0" />
       <ComboBox id="freqCombo2" fx:id="freqCombo2" layoutX="850.0" layoutY="550.0" prefWidth="150.0" />
-      <Button layoutX="850.0" layoutY="641.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="282.0" styleClass="submitButton" stylesheets="@../stylesheets/generalStyles.css" text="SUBMIT" textFill="WHITE">
+      <Button layoutX="850.0" layoutY="641.0" mnemonicParsing="false" onAction="#submit" prefHeight="76.0" prefWidth="282.0" styleClass="submitButton" stylesheets="@../stylesheets/generalStyles.css" text="SUBMIT" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="32.0" />
          </font>

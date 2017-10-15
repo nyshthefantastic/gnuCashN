@@ -104,3 +104,108 @@ and open the template in the editor.
     -fx-background-image: url(images/dashboard/Help.png);
 
 }
+
+/* CSS Styling for addNewCustomerBtn
+References - https://www.quackit.com/css/css_color_codes.cfm */
+#addNewCustomerBtn {
+    -fx-background-color: 
+        #2196F3,
+        linear-gradient(#2196F3, #2196F3),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #FEFEFE;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+#addNewCustomerBtn Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+#addNewCustomerBtn:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2FADC0 0%, #2BAFC3 100%),
+        #2FADC0,
+        #32CAE2,
+        radial-gradient(center 50% 50%, radius 100%, #26DBF7, #2FADC0);      
+}
+#addNewCustomerBtn:pressed {
+    -fx-padding: 15 20 18 20;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2FADC0 0%, #2BAFC3 100%),
+        #2FADC0,
+        #32CAE2,
+        radial-gradient(center 50% 50%, radius 100%, #26DBF7, #2FADC0); 
+}
+
+/* CSS Styling for findCustomerBtn
+References - https://www.quackit.com/css/css_color_codes.cfm */
+#findCustomerBtn {
+    -fx-background-color: 
+        #2196F3,
+        linear-gradient(#2196F3, #2196F3),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #FEFEFE;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+#findCustomerBtn Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+#findCustomerBtn:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2FADC0 0%, #2BAFC3 100%),
+        #2FADC0,
+        #32CAE2,
+        radial-gradient(center 50% 50%, radius 100%, #26DBF7, #2FADC0);      
+}
+#findCustomerBtn:pressed {
+    -fx-padding: 15 20 18 20;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2FADC0 0%, #2BAFC3 100%),
+        #2FADC0,
+        #32CAE2,
+        radial-gradient(center 50% 50%, radius 100%, #26DBF7, #2FADC0); 
+}
+
+/* CSS Styling for newExpVouchBtn
+References - https://www.quackit.com/css/css_color_codes.cfm */
+#newExpVouchBtn {
+    -fx-background-color: 
+        #2196F3,
+        linear-gradient(#2196F3, #2196F3),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #FEFEFE;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 20px;
+    -fx-padding: 10 20 10 20;
+}
+#newExpVouchBtn Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+#newExpVouchBtn:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2FADC0 0%, #2BAFC3 100%),
+        #2FADC0,
+        #32CAE2,
+        radial-gradient(center 50% 50%, radius 100%, #26DBF7, #2FADC0);      
+}
+#newExpVouchBtn:pressed {
+    -fx-padding: 15 20 18 20;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #2FADC0 0%, #2BAFC3 100%),
+        #2FADC0,
+        #32CAE2,
+        radial-gradient(center 50% 50%, radius 100%, #26DBF7, #2FADC0); 
+}

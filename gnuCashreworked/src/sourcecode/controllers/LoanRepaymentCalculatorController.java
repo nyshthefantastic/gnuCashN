@@ -12,6 +12,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.AnchorPane;
 
@@ -21,34 +22,43 @@ import javafx.scene.layout.AnchorPane;
  * @author U Computers
  */
 public class LoanRepaymentCalculatorController implements Initializable {
+
     @FXML
     private ComboBox freqCombo1;
-       @FXML
+    @FXML
     private ComboBox freqCombo2;
-           @FXML
-    private AnchorPane accGUI;
+    @FXML
+    private AnchorPane cusGUI;
+
     /**
      * Initializes the controller class.
      */
-        @FXML
-    private void backClick(ActionEvent event) throws IOException 
-    {
-     
-        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/accountsHome.fxml"));
-        accGUI.getChildren().setAll(pane);
+       @FXML
+    private void submit(ActionEvent event) throws IOException {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("SUCCESS");
+        alert.setHeaderText(null);
+        alert.setContentText("INPUT SUCCESSFUL !");
+
+        alert.showAndWait();
     }
+    @FXML
+    private void backClick(ActionEvent event) throws IOException {
+
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/sourcecode/accountsHome.fxml"));
+        cusGUI.getChildren().setAll(pane);
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-         freqCombo1.getItems().removeAll(freqCombo1.getItems());
-    freqCombo1.getItems().addAll("Monthly", "Monthly");
-    freqCombo1.getSelectionModel().select("Monthly");
-      freqCombo2.getItems().removeAll(freqCombo2.getItems());
-    freqCombo2.getItems().addAll("Monthly", "Monthly");
-    freqCombo2.getSelectionModel().select("Monthly");
-       
+        freqCombo1.getItems().removeAll(freqCombo1.getItems());
+        freqCombo1.getItems().addAll("Monthly", "Annually");
+        freqCombo1.getSelectionModel().select("Monthly");
+        freqCombo2.getItems().removeAll(freqCombo2.getItems());
+        freqCombo2.getItems().addAll("Monthly", "Annually");
+        freqCombo2.getSelectionModel().select("Monthly");
+
     }
-   
-    
-    
+
 }

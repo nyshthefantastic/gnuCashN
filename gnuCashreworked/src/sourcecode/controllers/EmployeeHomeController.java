@@ -47,6 +47,13 @@ private AnchorPane empGUI;
         AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/findEmployee.fxml"));
         empGUI.getChildren().setAll(pane);
     }
+      @FXML
+    private void newExpenseClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/newExpenseVoucher.fxml"));
+        empGUI.getChildren().setAll(pane);
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
