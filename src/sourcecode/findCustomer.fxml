@@ -78,10 +78,12 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TableView layoutX="676.0" layoutY="350.0" prefHeight="232.0" prefWidth="490.0">
+      <TableView id="table1" fx:id="table1" layoutX="676.0" layoutY="350.0" prefHeight="232.0" prefWidth="490.0" styleClass="table1" stylesheets="@../stylesheets/generalStyles.css">
          <columns>
-            <TableColumn prefWidth="75.0" text="C1" />
-            <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn prefWidth="75.0" text="ID" />
+            <TableColumn prefWidth="135.0" text="NAME" />
+            <TableColumn prefWidth="142.0" text="COMPANY" />
+            <TableColumn prefWidth="137.0" text="ADDRESS" />
          </columns>
       </TableView>
    </children>

@@ -38,3 +38,11 @@ and open the template in the editor.
     -fx-border-width: 3px;
 
 }
+.table1 .column-header {
+    -fx-background-color: #2196F3;
+
+}
+.table1 .column-header .label{
+    -fx-background-color: #2196F3;
+    -fx-text-fill: #ffffff;
+}
