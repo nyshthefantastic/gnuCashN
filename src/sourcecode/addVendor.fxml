@@ -60,32 +60,32 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="350.0" layoutY="270.0" prefHeight="35.0" prefWidth="221.0" promptText="ABC &amp; Company" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField id="comName" fx:id="comName" layoutX="350.0" layoutY="270.0" prefHeight="35.0" prefWidth="221.0" promptText="ABC &amp; Company" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="350.0" layoutY="410.0" prefHeight="35.0" prefWidth="221.0" promptText="50, xyz Street, Colombo" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField id="addTxt" fx:id="addTxt" layoutX="350.0" layoutY="410.0" prefHeight="35.0" prefWidth="221.0" promptText="50, xyz Street, Colombo" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="350.0" layoutY="550.0" prefHeight="35.0" prefWidth="221.0" promptText="John Doe" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField id="notesTxt" fx:id="notesTxt" layoutX="350.0" layoutY="550.0" prefHeight="35.0" prefWidth="221.0" promptText="John Doe" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="850.0" layoutY="130.0" prefHeight="35.0" prefWidth="189.0" promptText="Phone" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField id="phoneTxt" fx:id="phoneTxt" layoutX="850.0" layoutY="130.0" prefHeight="35.0" prefWidth="189.0" promptText="Phone" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="850.0" layoutY="270.0" prefHeight="35.0" prefWidth="189.0" promptText="Email" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField id="emailTxt" fx:id="emailTxt" layoutX="850.0" layoutY="270.0" prefHeight="35.0" prefWidth="189.0" promptText="Email" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="850.0" layoutY="410.0" prefHeight="35.0" prefWidth="189.0" promptText="Fax" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField id="faxTxt" fx:id="faxTxt" layoutX="850.0" layoutY="410.0" prefHeight="35.0" prefWidth="189.0" promptText="Fax" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>

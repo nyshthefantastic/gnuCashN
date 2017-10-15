@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
+
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -90,7 +90,7 @@
       </TextField>
       <DatePicker layoutX="300.0" layoutY="270.0" prefHeight="35.0" prefWidth="221.0" />
       <ComboBox id="newInvTerms" fx:id="newInvTerms" layoutX="850.0" layoutY="410.0" prefHeight="35.0" prefWidth="221.0" />
-      <ChoiceBox id="newInvType" fx:id="newInvType" layoutX="300.0" layoutY="130.0" prefHeight="35.0" prefWidth="221.0" />
+      <ComboBox id="newInvType" fx:id="newInvType" layoutX="300.0" layoutY="130.0" prefHeight="35.0" prefWidth="221.0" />
       <Label layoutX="850.0" layoutY="480.0" text="Notes">
          <font>
             <Font name="System Bold" size="18.0" />

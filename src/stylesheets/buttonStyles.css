@@ -104,7 +104,22 @@ and open the template in the editor.
     -fx-background-image: url(images/dashboard/Help.png);
 
 }
+#loanCal{
+    -fx-background-image: url(images/dashboard/loancal.png);
 
+}
+#newInvoice{
+    -fx-background-image: url(images/dashboard/addInvoice.png);
+
+}
+#findInvoice{
+    -fx-background-image: url(images/dashboard/findInvoice.png);
+
+}
+#newExpVoucher{
+    -fx-background-image: url(images/dashboard/newExpenseVoucher.png);
+
+}
 /* CSS Styling for addNewCustomerBtn
 References - https://www.quackit.com/css/css_color_codes.cfm */
 #addNewCustomerBtn {

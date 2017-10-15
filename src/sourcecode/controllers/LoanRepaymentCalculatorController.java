@@ -14,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -29,18 +30,50 @@ public class LoanRepaymentCalculatorController implements Initializable {
     private ComboBox freqCombo2;
     @FXML
     private AnchorPane cusGUI;
+       @FXML
+    private TextField payPeriodsTxt;
+    @FXML
+    private TextField interestText;
+    @FXML
+    private TextField pvaludTxt;
+       @FXML
+    private TextField ppaymentTxt;
+    @FXML
+    private TextField fuValueTxt;
+       boolean valid = true;
 
     /**
      * Initializes the controller class.
      */
        @FXML
     private void submit(ActionEvent event) throws IOException {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("SUCCESS");
-        alert.setHeaderText(null);
-        alert.setContentText("INPUT SUCCESSFUL !");
+           valid = true;
 
-        alert.showAndWait();
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                validations val=new validations();
+        
+         if (val.testEmpty(payPeriodsTxt.getText()) || val.testEmpty(interestText.getText()) || val.testEmpty(pvaludTxt.getText()) || val.testEmpty(ppaymentTxt.getText()) || val.testEmpty(fuValueTxt.getText()) ) {
+            valid = false;
+            alert.setTitle("FAILURE");
+            alert.setHeaderText(null);
+            alert.setContentText("ONE OR MORE FIELDS NOT FILLED !");
+
+            alert.showAndWait();
+
+        }
+            if (valid) {
+            alert.setTitle("SUCCESS");
+            alert.setHeaderText(null);
+            alert.setContentText("INPUT SUCCESSFUL !");
+
+            alert.showAndWait();
+            payPeriodsTxt.setText("");
+            interestText.setText("");
+            pvaludTxt.setText("");
+            ppaymentTxt.setText("");
+            fuValueTxt.setText("");
+          
+        }
     }
     @FXML
     private void backClick(ActionEvent event) throws IOException {

@@ -32,11 +32,11 @@
       <Label layoutX="300.0" layoutY="340.0" text="Present Value" />
       <Label layoutX="300.0" layoutY="480.0" text="Periodic Payment" />
       <Label layoutX="300.0" layoutY="620.0" text="Future Value" />
-      <TextField layoutX="300.0" layoutY="130.0" promptText="24" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
-      <TextField layoutX="300.0" layoutY="550.0" promptText="400.00" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
-      <TextField layoutX="300.0" layoutY="410.0" promptText="15000.00" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
-      <TextField layoutX="300.0" layoutY="270.0" promptText="12" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
-      <TextField layoutX="300.0" layoutY="690.0" promptText="21000.00" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
+      <TextField id="payPeriodsTxt" fx:id="payPeriodsTxt" layoutX="300.0" layoutY="130.0" promptText="24" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
+      <TextField id="ppaymentTxt" fx:id="ppaymentTxt" layoutX="300.0" layoutY="550.0" promptText="400.00" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
+      <TextField id="pvaludTxt" fx:id="pvaludTxt" layoutX="300.0" layoutY="410.0" promptText="15000.00" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
+      <TextField id="interestText" fx:id="interestText" layoutX="300.0" layoutY="270.0" promptText="12" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
+      <TextField id="fuValueTxt" fx:id="fuValueTxt" layoutX="300.0" layoutY="690.0" promptText="21000.00" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css" />
       <RadioButton layoutX="850.0" layoutY="130.0" mnemonicParsing="false" text="Discrete" />
       <RadioButton layoutX="1010.0" layoutY="130.0" mnemonicParsing="false" text="Continous" />
       <RadioButton layoutX="850.0" layoutY="410.0" mnemonicParsing="false" text="Beginning" />

@@ -14,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -32,14 +33,50 @@ public class AddInvoiceController implements Initializable {
     private ComboBox newInvTerms;
      @FXML
     private AnchorPane cusGUI;
+       @FXML
+    private TextField bidTxt;
+    @FXML
+    private TextField notesTxt;
+    @FXML
+    private TextField invoiceTxt;
+    @FXML
+    private TextField cidTxt;
+
+    boolean valid = true;
       @FXML
     private void submit(ActionEvent event) throws IOException {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("SUCCESS");
-        alert.setHeaderText(null);
-        alert.setContentText("INPUT SUCCESSFUL !");
+         Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        validations val = new validations();
 
-        alert.showAndWait();
+        String bid = bidTxt.getText();
+        String notes = notesTxt.getText();
+        String invoice = invoiceTxt.getText();
+        String cid = cidTxt.getText();
+        valid = true;
+
+        if ( val.testEmpty(bid) || val.testEmpty(notes) || val.testEmpty(invoice) || val.testEmpty(cid)) {
+            valid = false;
+            alert.setTitle("FAILURE");
+            alert.setHeaderText(null);
+            alert.setContentText("ONE OR MORE FIELDS NOT FILLED !");
+
+            alert.showAndWait();
+
+        }
+       
+      
+        if (valid) {
+            alert.setTitle("SUCCESS");
+            alert.setHeaderText(null);
+            alert.setContentText("INPUT SUCCESSFUL !");
+
+            alert.showAndWait();
+           
+            bidTxt.setText("");
+            notesTxt.setText("");
+            invoiceTxt.setText("");
+            cidTxt.setText("");
+        }
     }
      @FXML
     private void backClick(ActionEvent event) throws IOException {

@@ -14,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -34,15 +35,37 @@ public class FindInvoiceController implements Initializable {
     private ComboBox newSearchComboBox;
     @FXML
     private AnchorPane cusGUI;
+        @FXML
+    private TextField bid;
+    boolean valid = true;
 
     @FXML
     private void submit(ActionEvent event) throws IOException {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("SUCCESS");
-        alert.setHeaderText(null);
-        alert.setContentText("INPUT SUCCESSFUL !");
+        valid = true;
 
-        alert.showAndWait();
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                validations val=new validations();
+        
+         if (val.testEmpty(bid.getText())) {
+            valid = false;
+            alert.setTitle("FAILURE");
+            alert.setHeaderText(null);
+            alert.setContentText("ONE OR MORE FIELDS NOT FILLED !");
+
+            alert.showAndWait();
+
+        }
+            if (valid) {
+            alert.setTitle("SUCCESS");
+            alert.setHeaderText(null);
+            alert.setContentText("INPUT SUCCESSFUL !");
+
+            alert.showAndWait();
+            bid.setText("");
+          
+    
+          
+        }
     }
 
     @FXML

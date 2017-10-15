@@ -57,22 +57,22 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="300.0" layoutY="410.0" prefHeight="35.0" prefWidth="221.0" promptText="BILL1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField id="bidTxt" fx:id="bidTxt" layoutX="300.0" layoutY="410.0" prefHeight="35.0" prefWidth="221.0" promptText="BILL1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="300.0" layoutY="550.0" prefHeight="35.0" prefWidth="221.0" promptText="John Doe" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField id="notesTxt" fx:id="notesTxt" layoutX="300.0" layoutY="550.0" prefHeight="35.0" prefWidth="221.0" promptText="John Doe" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="850.0" layoutY="130.0" prefHeight="35.0" prefWidth="221.0" promptText="INVOICE1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField id="invoiceTxt" fx:id="invoiceTxt" layoutX="850.0" layoutY="130.0" prefHeight="35.0" prefWidth="221.0" promptText="INVOICE1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="850.0" layoutY="270.0" prefHeight="35.0" prefWidth="221.0" promptText="CUST1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
+      <TextField id="cidTxt" fx:id="cidTxt" layoutX="850.0" layoutY="270.0" prefHeight="35.0" prefWidth="221.0" promptText="CUST1000" styleClass="textFieldBottom" stylesheets="@../stylesheets/generalStyles.css">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>

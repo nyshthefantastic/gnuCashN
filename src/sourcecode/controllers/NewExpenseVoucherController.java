@@ -67,13 +67,21 @@ public class NewExpenseVoucherController implements Initializable {
             alert.showAndWait();
 
         }
-        
-     
-        alert.setTitle("SUCCESS");
-        alert.setHeaderText(null);
-        alert.setContentText("INPUT SUCCESSFUL !");
+            if (valid) {
+            alert.setTitle("SUCCESS");
+            alert.setHeaderText(null);
+            alert.setContentText("INPUT SUCCESSFUL !");
 
-        alert.showAndWait();
+            alert.showAndWait();
+            bid.setText("");
+            cid.setText("");
+            vid.setText("");
+            notesTxt.setText("");
+            eid.setText("");
+          
+        }
+     
+       
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
