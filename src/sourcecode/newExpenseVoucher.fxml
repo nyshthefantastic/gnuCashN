@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="empGUI" fx:id="empGUI" prefHeight="768.0" prefWidth="1280.0" styleClass="anchorpanes" stylesheets="@../stylesheets/generalStyles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sourcecode.controllers.NewExpenseVoucherController">
+<AnchorPane id="empGUI" fx:id="empGUI" prefHeight="720.0" prefWidth="1280.0" styleClass="anchorpanes" stylesheets="@../stylesheets/generalStyles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sourcecode.controllers.NewExpenseVoucherController">
    <children>
       <Label id="sidebar" fx:id="sidebar" prefHeight="768.0" prefWidth="235.0" stylesheets="@../stylesheets/generalStyles.css" />
       <Button id="backButton" fx:id="backButton" contentDisplay="GRAPHIC_ONLY" layoutX="91.0" layoutY="139.0" maxHeight="48.8" maxWidth="50.0" minHeight="48.8" minWidth="50.0" mnemonicParsing="false" onAction="#backClick" onTouchPressed="#backClick" prefHeight="48.8" prefWidth="50.0" stylesheets="@../stylesheets/buttonStyles.css">
