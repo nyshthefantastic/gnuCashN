@@ -126,6 +126,9 @@ public class AddEmployeeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        id.setText("EMP00001");
+
+
        
     }    
     
