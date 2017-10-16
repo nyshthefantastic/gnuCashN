@@ -12,7 +12,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -20,8 +25,21 @@ import javafx.scene.layout.AnchorPane;
  * @author U Computers
  */
 public class AccountsHomeController implements Initializable {
-@FXML
-private AnchorPane accGUI;
+    @FXML
+    private AnchorPane accGUI;
+
+    @FXML
+    private Button loanCal;
+
+    @FXML
+    private Button addAcc;
+
+    @FXML
+    private Label sidebar;
+
+    @FXML
+    private Button backButton;
+
     /**
      * Initializes the controller class.
      */
@@ -39,13 +57,23 @@ private AnchorPane accGUI;
         AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/loanRepaymentCalculator.fxml"));
         accGUI.getChildren().setAll(pane);
     }
+    
     @FXML
-    private void addAccClick(ActionEvent event) throws IOException 
-    {
-     
-        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/addAccount.fxml"));
-        accGUI.getChildren().setAll(pane);
+    void addAccClick(ActionEvent event) throws IOException  {
+        //AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/addAccount.fxml"));
+        //accGUI.getChildren().setAll(pane);
+        try{
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/sourcecode/addAccount.fxml"));
+            Parent r1 = (Parent) loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Add new account");
+            stage.setScene(new Scene(r1));
+            stage.show();
+        }catch(Exception e){
+            System.err.println("Error : " + e);
+        }
     }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

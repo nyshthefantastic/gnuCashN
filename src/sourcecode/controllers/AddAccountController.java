@@ -9,10 +9,12 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.scene.input.TouchEvent;
 
 /**
  * FXML Controller class
@@ -56,15 +58,26 @@ public class AddAccountController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        //currency.setValue("ADF (Andorran Franc)");
-        //currency.setItems(curr);
+        currency.setValue("SELECT");
+        currency.setItems(curr);
         
-        //fraction.setValue("ADF (Andorran Franc)");
-        //fraction.setItems(frac);
+        fraction.setValue("SELECT");
+        fraction.setItems(frac);
         
-        //color.setValue("RED");
-        //color.setItems(colo);
+        color.setValue("SELECT");
+        color.setItems(colo);
         
     }    
+    
+    
+    @FXML
+    void backClick(ActionEvent event) {
+
+    }
+
+    @FXML
+    void submit(TouchEvent event) {
+
+    }
     
 }
