@@ -129,9 +129,6 @@
       </TitledPane>
       <TreeView layoutX="391.0" layoutY="450.0" prefHeight="200.0" prefWidth="200.0" />
       <Label layoutX="238.0" layoutY="450.0" prefHeight="20.0" prefWidth="150.0" text="Parent account" />
-      <Button layoutX="1173.0" layoutY="674.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" text="OK" />
-      <Button layoutX="1073.0" layoutY="674.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" text="CANCEL" />
-      <Button layoutX="238.0" layoutY="674.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="60.0" text="HELP" />
       <Button id="backButton" fx:id="backButton" contentDisplay="GRAPHIC_ONLY" layoutX="91.0" layoutY="139.0" maxHeight="48.8" maxWidth="50.0" minHeight="48.8" minWidth="50.0" mnemonicParsing="false" onAction="#backClick" prefHeight="48.8" prefWidth="50.0" stylesheets="@../stylesheets/buttonStyles.css">
          <effect>
             <InnerShadow />
@@ -142,5 +139,10 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
+      <Button id="addNewCustomerBtn" fx:id="addNewCustomerBtn" layoutX="1059.0" layoutY="655.0" mnemonicParsing="false" onAction="#submit" onTouchPressed="#submit" prefHeight="59.0" prefWidth="208.0" stylesheets="@../stylesheets/buttonStyles.css" text="SUBMIT">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

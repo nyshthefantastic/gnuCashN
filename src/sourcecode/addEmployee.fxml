@@ -96,8 +96,10 @@
             </GridPane>
          </content>
       </TitledPane>
-      <Button layoutX="1169.0" layoutY="674.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" text="OK" />
-      <Button layoutX="1069.0" layoutY="674.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" text="CANCEL" />
-      <Button layoutX="253.0" layoutY="674.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="60.0" text="HELP" />
+      <Button id="addNewCustomerBtn" fx:id="addNewCustomerBtn" layoutX="1055.0" layoutY="645.0" mnemonicParsing="false" onAction="#submit" onTouchPressed="#submit" prefHeight="59.0" prefWidth="208.0" stylesheets="@../stylesheets/buttonStyles.css" text="SUBMIT">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
