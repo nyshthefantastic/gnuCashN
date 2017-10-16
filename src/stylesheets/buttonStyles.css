@@ -108,6 +108,10 @@ and open the template in the editor.
     -fx-background-image: url(images/dashboard/loancal.png);
 
 }
+#addAcc{
+    -fx-background-image: url(images/dashboard/AddAccount.png);
+
+}
 #newInvoice{
     -fx-background-image: url(images/dashboard/addInvoice.png);
 
