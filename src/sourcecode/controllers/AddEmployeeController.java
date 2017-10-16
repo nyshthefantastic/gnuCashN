@@ -127,10 +127,31 @@ public class AddEmployeeController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         id.setText("EMP00001");
+        phone.addEventFilter(KeyEvent.KEY_TYPED , ValidatePhone(10));
+        fax.addEventFilter(KeyEvent.KEY_TYPED , ValidatePhone(10));
+    }
 
-
-       
-    }    
+       private EventHandler<KeyEvent> ValidatePhone(final Integer max_Lengh) {
+        return new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent e) {
+                TextField txt_TextField = (TextField) e.getSource();                
+                if (txt_TextField.getText().length() >= max_Lengh) {                    
+                    e.consume();
+                }
+                if(e.getCharacter().matches("[0-9.]")){ 
+                    if(txt_TextField.getText().contains(".") && e.getCharacter().matches("[.]")){
+                        e.consume();
+                    }else if(txt_TextField.getText().length() == 0 && e.getCharacter().matches("[.]")){
+                        e.consume(); 
+                    }
+                }else{
+                    e.consume();
+                }
+            }
+        };
+    }
+        
     
         @FXML
     void backClick(ActionEvent event) throws IOException{
