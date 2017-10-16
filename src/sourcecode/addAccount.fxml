@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
@@ -19,10 +18,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="addAccGUI" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sourcecode.controllers.AddAccountController">
-    <stylesheets>
-        <URL value="@addaccount.css" />
-    </stylesheets>
+<AnchorPane id="AnchorPane" fx:id="addAccGUI" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sourcecode.controllers.AddAccountController">
    <children>
       <Label fx:id="sidebar" layoutX="-3.0" layoutY="-4.0" prefHeight="726.0" prefWidth="236.0" styleClass="mainFxmlClass" stylesheets="@../stylesheets/generalStyles.css" textOverrun="CLIP" />
       <Label layoutX="242.0" layoutY="14.0" text="NEW ACCOUNT INFORMATION">

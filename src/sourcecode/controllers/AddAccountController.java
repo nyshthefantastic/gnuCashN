@@ -5,16 +5,19 @@
  */
 package sourcecode.controllers;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.input.TouchEvent;
+import javafx.scene.layout.AnchorPane;
 
 /**
  * FXML Controller class
@@ -32,8 +35,24 @@ public class AddAccountController implements Initializable {
     private ComboBox fraction;
     @FXML
     private ComboBox color;
+     @FXML
+    private AnchorPane addAccGUI;
     
-    ObservableList<String> curr = FXCollections.observableArrayList("ADF (Andorran Franc)",
+
+    
+      @FXML
+    private void backClick(ActionEvent event) throws IOException 
+    {
+     
+        AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/accountsHome.fxml"));
+        addAccGUI.getChildren().setAll(pane);
+    }
+
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+            ObservableList<String> curr = FXCollections.observableArrayList("ADF (Andorran Franc)",
                                                                     "ADP (Andorran Peseta)", 
                                                                     "AED (UAE Dirham)", 
                                                                     "AFA (Afghani)",
@@ -52,12 +71,6 @@ public class AddAccountController implements Initializable {
     ObservableList<String> colo = FXCollections.observableArrayList("RED",
                                                                     "GREEN", 
                                                                     "BLUE");
-    
-    
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
         currency.setValue("SELECT");
         currency.setItems(curr);
         
@@ -70,11 +83,7 @@ public class AddAccountController implements Initializable {
     }    
     
     
-    @FXML
-    void backClick(ActionEvent event) {
-
-    }
-
+   
     @FXML
     void submit(TouchEvent event) {
 

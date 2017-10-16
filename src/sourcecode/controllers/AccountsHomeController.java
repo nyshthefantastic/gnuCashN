@@ -62,16 +62,9 @@ public class AccountsHomeController implements Initializable {
     void addAccClick(ActionEvent event) throws IOException  {
         //AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/addAccount.fxml"));
         //accGUI.getChildren().setAll(pane);
-        try{
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/sourcecode/addAccount.fxml"));
-            Parent r1 = (Parent) loader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Add new account");
-            stage.setScene(new Scene(r1));
-            stage.show();
-        }catch(Exception e){
-            System.err.println("Error : " + e);
-        }
+          AnchorPane pane =FXMLLoader.load(getClass().getResource("/sourcecode/addAccount.fxml"));
+        accGUI.getChildren().setAll(pane);
+        
     }
     
     @Override
