@@ -42,15 +42,15 @@
         </rowConstraints>
          <children>
             <Label prefHeight="20.0" prefWidth="150.0" text="Account number" />
-            <TextField prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="1" />
+            <TextField id="a" fx:id="a" prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="1" />
             <Label prefHeight="20.0" prefWidth="138.0" text="Account name" GridPane.columnIndex="3" />
-            <TextField prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="4" />
+            <TextField id="c" fx:id="c" prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="4" />
             <Label prefHeight="20.0" prefWidth="150.0" text="Description" GridPane.rowIndex="1" />
             <Label prefHeight="20.0" prefWidth="150.0" text="Currency" GridPane.columnIndex="3" GridPane.rowIndex="1" />
             <ComboBox fx:id="currency" prefHeight="25.0" prefWidth="368.0" promptText="SELECT " GridPane.columnIndex="4" GridPane.rowIndex="1" />
             <Label prefHeight="20.0" prefWidth="150.0" text="Smallest fraction" GridPane.rowIndex="2" />
             <Label prefHeight="20.0" prefWidth="150.0" text="Account color" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <TextField prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField id="b" fx:id="b" prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <ComboBox fx:id="fraction" prefHeight="25.0" prefWidth="368.0" promptText="SELECT " GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <ComboBox fx:id="color" prefHeight="25.0" prefWidth="368.0" promptText="SELECT " GridPane.columnIndex="4" GridPane.rowIndex="2" />
          </children>
@@ -108,7 +108,7 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
                   <Label layoutX="14.0" layoutY="14.0" text="Balance" />
-                  <TextField layoutX="97.0" layoutY="10.0" prefHeight="25.0" prefWidth="172.0" />
+                  <TextField id="d" fx:id="d" layoutX="97.0" layoutY="10.0" prefHeight="25.0" prefWidth="172.0" />
                   <Label layoutX="14.0" layoutY="49.0" text="Date" />
                   <DatePicker layoutX="97.0" layoutY="45.0" />
                   <Label layoutX="14.0" layoutY="79.0" prefHeight="17.0" prefWidth="260.0" text="Initial Balance Transfer">

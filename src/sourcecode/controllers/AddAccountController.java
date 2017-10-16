@@ -38,7 +38,7 @@ public class AddAccountController implements Initializable {
      @FXML
     private AnchorPane addAccGUI;
     
-
+     
     
       @FXML
     private void backClick(ActionEvent event) throws IOException 
