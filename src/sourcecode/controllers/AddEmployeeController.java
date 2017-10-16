@@ -28,7 +28,7 @@ public class AddEmployeeController implements Initializable {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("SUCCESS");
         alert.setHeaderText(null);
-        alert.setContentText("INPUT SUCCESSFUL !");
+        alert.setContentText("INPUT SUCCESSFULL !");
 
         alert.showAndWait();
     }
@@ -37,5 +37,7 @@ public class AddEmployeeController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    
     
 }
