@@ -58,7 +58,7 @@
             <TextField id="id" fx:id="id" GridPane.columnIndex="1" />
             <TextField GridPane.columnIndex="4" />
             <TextField id="name" fx:id="name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField id="phone" fx:id="phone" onKeyReleased="#ValidatePhone" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField id="phone" fx:id="phone" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <TextField id="fax" fx:id="fax" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <TextField id="email" fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <TextField id="lan" fx:id="lan" GridPane.columnIndex="1" GridPane.rowIndex="5" />
